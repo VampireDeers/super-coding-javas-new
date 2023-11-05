@@ -13,7 +13,7 @@ public class MyClass2 {
         // System.out.println("Hello world2");
         // System.out.println("Bye World");
 
-        System.out.println(args[0]);
+        // System.out.println(args[0]);
         System.out.println(args[1]);
         System.out.println(args[2]);
     }
