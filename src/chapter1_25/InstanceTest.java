@@ -1,4 +1,4 @@
-package chapter1_24;
+package chapter1_25;
 
 public class InstanceTest {
 

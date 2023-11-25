@@ -1,4 +1,4 @@
-package chapter1_24;
+package chapter1_25;
 
 public class Student {
     // 속성
@@ -11,38 +11,40 @@ public class Student {
     private String gender;
 
     // 생성자
-    Student(){}
-    Student(String pName, String pGender){
-        name = pName;
-        gender = pGender;
+    Student(){
+        this("UNKNOWN", "UNKNOWN");
     }
-    Student(int pClassYear, int pClassroomNum, int pStudentNum, String pName,String pGender){
-        classYear = pClassYear;
-        classroomNumber = pClassroomNum;
-        studentNumber = pStudentNum;
-        name = pName;
-        gender = pGender;
+    Student(String name, String gender){
+        this(-1, -1, -1, name, gender);
+    }
+
+    public Student(int classYear, int classroomNumber, int studentNumber, String name, String gender) {
+        this.classYear = classYear;
+        this.classroomNumber = classroomNumber;
+        this.studentNumber = studentNumber;
+        this.name = name;
+        this.gender = gender;
     }
 
     // getter / setter
     public String getName() {
         return name;
     }
-    public void setName(String pName){
-        name = pName;
+    public void setName(String name){
+        this.name = name;
     }
 
     public String getGender(){
         return gender;
     }
-    public void setGender(String pGender){
-        gender = pGender;
+    public void setGender(String gender){
+        this.gender = gender;
     }
     public int getStudentNumber(){
         return studentNumber;
     }
-    public void setStudentNumber(int pStudentNumber){
-        studentNumber = pStudentNumber;
+    public void setStudentNumber(int studentNumber){
+        this.studentNumber = studentNumber;
     }
 
     // 행위

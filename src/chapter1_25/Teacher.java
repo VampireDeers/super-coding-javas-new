@@ -1,4 +1,4 @@
-package chapter1_24;
+package chapter1_25;
 
 
 public class Teacher {
@@ -19,39 +19,39 @@ public class Teacher {
         return schoolName;
     }
 
-    public void setSchoolName(String pSchoolName) {
-        schoolName = pSchoolName;
+    public void setSchoolName(String schoolName) {
+        this.schoolName = schoolName;
     }
 
     public Subject getSubject() {
         return subject;
     }
 
-    public void setSubject(Subject pSubject) {
-        subject = pSubject;
+    public void setSubject(Subject subject) {
+        this.subject = subject;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String pName) {
-        name = pName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getGender() {
         return gender;
     }
 
-    public void setGender(String pGender) {
-        gender = pGender;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
-    Teacher(String pName, String pGender, String pSubjectName, String pSubjectCode){
-        name = pName;
-        gender = pGender;
+    Teacher(String name, String gender, String subjectName, String subjectCode){
+        this.name = name;
+        this.gender = gender;
 
-        Subject newSubject = new Subject(pSubjectName, pSubjectCode);
+        Subject newSubject = new Subject(subjectName, subjectCode);
         subject = newSubject;
     }
     // 행위
