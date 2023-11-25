@@ -6,6 +6,7 @@ public class Subject {
     String subjectCode;
 
     Subject() {}
+
     Subject(String pSubjectName, String pSubjectCode){
         subjectName = pSubjectName;
         subjectCode = pSubjectCode;
